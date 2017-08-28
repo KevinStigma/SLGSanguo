@@ -22,6 +22,7 @@ public slots:
 	void on_newplotframe_pushButton_clicked();
 	void on_defineTxt_pushButton_clicked();
 	void on_loadCharacterImg_pushButton_clicked();
+	void on_insertPlotDialog_pushButton_clicked();
 
 	void on_plotname_lineEdit_editingFinished();
 	void on_scenename_lineEdit_editingFinished();

@@ -26,6 +26,7 @@ LevelEditor::LevelEditor(QWidget *parent)
 	plotFrames.resize(1);
 	ui.frame->setWorldMapFrames(&worldMapFrames);
 	ui.frame2->setBackgroundLabel(ui.plotbg_label);
+	ui.frame2->setPlotFrames(&plotFrames);
 }
 
 LevelEditor::~LevelEditor()
@@ -113,6 +114,39 @@ void LevelEditor::on_loadCharacterImg_pushButton_clicked()
 	std::string local_name = "Face/" + img_name.substr(slash_ind + 1, img_name.length() - slash_ind);
 	character_local_name = local_name;
 	ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage(filename)));
+}
+
+void LevelEditor::on_insertPlotDialog_pushButton_clicked()
+{
+	if (!ui.plotbg_label->pixmap())
+		return;
+	int cur_id = ui.plot_scrollBar->sliderPosition();
+	assert(cur_id <plotFrames.size());
+	if (!ui.characterImg_label->pixmap())
+	{
+		SAFE_DELETE(plotFrames[cur_id].dialog_box);
+	}
+	else
+	{
+		if (!plotFrames[cur_id].dialog_box)
+		{
+			DialogBox*dialog = new DialogBox;
+			dialog->character_name = ui.charactername_lineEdit->text().toStdString();
+			dialog->character_path = character_local_name;
+			dialog->pos = DialogPos(ui.comboBox->currentIndex());
+			dialog->txt = ui.plot_textEdit->toPlainText().toStdString();
+			plotFrames[cur_id].dialog_box = dialog;
+		}
+		else
+		{
+			DialogBox* dialog = plotFrames[cur_id].dialog_box;
+			dialog->character_name = ui.charactername_lineEdit->text().toStdString();
+			dialog->character_path = character_local_name;
+			dialog->pos = DialogPos(ui.comboBox->currentIndex());
+			dialog->txt = ui.plot_textEdit->toPlainText().toStdString();
+		}
+	}
+	ui.frame2->updateDialog(cur_id);
 }
 
 void LevelEditor::on_plotname_lineEdit_editingFinished()

@@ -4,13 +4,6 @@
 #include <cassert>
 #include <QFileDialog>
 
-bool hasImage(QLabel* label)
-{
-	if (!label)
-		return false;
-	return label->pixmap() != NULL;
-}
-
 LevelEditor::LevelEditor(QWidget *parent)
 	: QMainWindow(parent)
 {
@@ -27,6 +20,13 @@ LevelEditor::LevelEditor(QWidget *parent)
 	ui.frame->setWorldMapFrames(&worldMapFrames);
 	ui.frame2->setBackgroundLabel(ui.plotbg_label);
 	ui.frame2->setPlotFrames(&plotFrames);
+	ui.frame2->setplotItemLabel(ui.plotItemlabel);
+	ui.frame2->setPlotComboBox(ui.comboBox_2);
+	ui.frame2->setPlotCheckBox(ui.mirror_checkBox);
+	
+	connect(ui.changeItemImg_pushButton, SIGNAL(clicked()), ui.frame2, SLOT(changeCurItemImg()));
+	connect(ui.comboBox_2, SIGNAL(currentIndexChanged(int)), ui.frame2, SLOT(changeCurItemType(int)));
+	connect(ui.mirror_checkBox, SIGNAL(stateChanged(int)), ui.frame2, SLOT(mirrorCurItemImg(int)));
 }
 
 LevelEditor::~LevelEditor()
@@ -95,6 +95,13 @@ void LevelEditor::on_newframe_pushButton_clicked()
 
 void LevelEditor::on_newplotframe_pushButton_clicked()
 {
+	if (!ui.plotbg_label->pixmap())
+		return;
+	int num = ui.plot_scrollBar->maximum();
+	ui.plot_scrollBar->setMaximum(num + 1);
+	ui.cur_plotframe_lineEdit->setText(QString::number(ui.plot_scrollBar->sliderPosition()));
+	ui.plotframe_num_label->setText(QString("frame num:") + QString::number(num + 2));
+	plotFrames.push_back(plotFrames.back());
 }
 
 void LevelEditor::on_defineTxt_pushButton_clicked()
@@ -122,7 +129,7 @@ void LevelEditor::on_insertPlotDialog_pushButton_clicked()
 		return;
 	int cur_id = ui.plot_scrollBar->sliderPosition();
 	assert(cur_id <plotFrames.size());
-	if (!ui.characterImg_label->pixmap())
+	if (!ui.characterImg_label->pixmap()||!ui.charactername_lineEdit->text().size())
 	{
 		SAFE_DELETE(plotFrames[cur_id].dialog_box);
 	}
@@ -183,6 +190,25 @@ void LevelEditor::on_worldframe_scrollBar_valueChanged(int val)
 	ui.frame->updateCurFrame(val);
 }
 
+void LevelEditor::on_plot_scrollBar_valueChanged(int val)
+{
+	assert(val <plotFrames.size());
+	if (plotFrames[val].dialog_box)
+	{
+		ui.plot_textEdit->setText(plotFrames[val].dialog_box->txt.c_str());
+		ui.charactername_lineEdit->setText(plotFrames[val].dialog_box->character_name.c_str());
+		ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage(std::string("../Data/Assets/"+plotFrames[val].dialog_box->character_path).c_str())));
+	}
+	else
+	{
+		ui.plot_textEdit->setText("");
+		ui.charactername_lineEdit->setText("");
+		ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage()));
+	}
+	ui.cur_plotframe_lineEdit->setText(QString::number(val));
+	ui.frame2->updateCurFrame(val);
+}
+
 void LevelEditor::on_cur_frame_lineEdit_editingFinished()
 {
 	QString text=ui.cur_frame_lineEdit->text();
@@ -199,6 +225,22 @@ void LevelEditor::on_cur_frame_lineEdit_editingFinished()
 	ui.cur_frame_lineEdit->clearFocus();
 }
 
+void LevelEditor::on_cur_plotframe_lineEdit_editingFinished()
+{
+	QString text = ui.cur_plotframe_lineEdit->text();
+	if (!text.size())
+	{
+		int id = ui.plot_scrollBar->sliderPosition();
+		ui.cur_plotframe_lineEdit->setText(QString::number(id));
+	}
+	else
+	{
+		int id = text.toInt();
+		ui.plot_scrollBar->setValue(id);
+	}
+	ui.cur_plotframe_lineEdit->clearFocus();
+}
+
 void LevelEditor::on_actionSave_Xml_triggered()
 {
 	QString name = QFileDialog::getSaveFileName(this, tr("Save XML"), ".", "xml files(*.xml)", 0);
@@ -206,8 +248,10 @@ void LevelEditor::on_actionSave_Xml_triggered()
 		return;
 	if (ui.tabWidget->currentIndex() == 0 && ui.voiceover_listWidget->count() && ui.local_img_label->text().size())
 		exportVoiceoverXml(name.toStdString());
-	else if (ui.tabWidget->currentIndex() == 1 && !(worldMapFrames.size() == 1 && worldMapFrames[1].img_items.size() == 0 && worldMapFrames[1].txt.size()==0))
+	else if (ui.tabWidget->currentIndex() == 1 && !(worldMapFrames.size() == 1 && worldMapFrames[0].img_items.size() == 0 && worldMapFrames[0].txt.size() == 0))
 		exportWorldMapXml(name.toStdString());
+	else if (ui.tabWidget->currentIndex() == 2 && !(plotFrames.size() == 1 && plotFrames[0].img_items.size() == 0))
+		exportPlotXml(name.toStdString());
 }
 
 void LevelEditor::exportVoiceoverXml(std::string file_name)
@@ -284,6 +328,75 @@ void LevelEditor::exportWorldMapXml(std::string file_name)
 	std::cout << "Export " << file_name << " successfully!" << std::endl;
 }
 
+void LevelEditor::exportPlotXml(std::string file_name)
+{
+	using namespace tinyxml2;
+	tinyxml2::XMLDocument doc;
+	XMLElement* parent = doc.NewElement("Plot");
+	parent->SetAttribute("PlotName",ui.plotname_lineEdit->text().toStdString().c_str());
+	parent->SetAttribute("SceneName",ui.scenename_lineEdit->text().toStdString().c_str());
+	parent->SetAttribute("Background",ui.frame2->getBackgroundPath().c_str());
+	doc.InsertFirstChild(parent);
+	XMLElement*node = doc.NewElement("Images");
+	std::set<std::string> imgs;
+	for (int i = 0; i < (int)plotFrames.size(); i++)
+	{
+		auto& frame = plotFrames[i];
+		for (int j = 0; j <(int)frame.img_items.size(); j++)
+			imgs.insert(frame.img_items[j].img_paths);
+	}
+	for (auto it = imgs.begin(); it != imgs.end(); it++)
+	{
+		XMLElement* child_node = doc.NewElement("Image");
+		child_node->SetText((*it).c_str());
+		node->InsertEndChild(child_node);
+	}
+	parent->InsertEndChild(node);
+
+	node = doc.NewElement("Frames");
+	for (int i = 0; i < (int)plotFrames.size(); i++)
+	{
+		auto& frame = plotFrames[i];
+		XMLElement* frame_node = doc.NewElement("Frame");
+		XMLElement* dialog_node = doc.NewElement("Dialog");
+		if (!frame.dialog_box)
+		{
+			dialog_node->SetAttribute("Name", "");
+			dialog_node->SetAttribute("ImgPath","");
+			dialog_node->SetAttribute("Pos", 0);
+			XMLElement*child_node = doc.NewElement("Txt");
+			child_node->SetText("");
+			dialog_node->InsertEndChild(child_node);
+		}
+		else
+		{
+			dialog_node->SetAttribute("Name", frame.dialog_box->character_name.c_str());
+			dialog_node->SetAttribute("ImgPath", frame.dialog_box->character_path.c_str());
+			dialog_node->SetAttribute("Pos", frame.dialog_box->pos);
+			XMLElement*child_node = doc.NewElement("Txt");
+			child_node->SetText(frame.dialog_box->txt.c_str());
+			dialog_node->InsertEndChild(child_node);
+		}
+		frame_node->InsertEndChild(dialog_node);
+		XMLElement* item_node = doc.NewElement("Items");
+		for (int j = 0; j < frame.img_items.size(); j++)
+		{
+			XMLElement* child_node = doc.NewElement("Item");
+			child_node->SetAttribute("ImagePath", frame.img_items[j].img_paths.c_str());
+			child_node->SetAttribute("PosX", frame.img_items[j].pos.x);
+			child_node->SetAttribute("PosY", frame.img_items[j].pos.y);
+			child_node->SetAttribute("type",frame.img_items[j].type);
+			child_node->SetAttribute("mirrored",frame.img_items[j].mirrored);
+			item_node->InsertEndChild(child_node);
+		}
+		frame_node->InsertEndChild(item_node);
+		node->InsertEndChild(frame_node);
+	}
+	parent->InsertEndChild(node);
+	doc.SaveFile(file_name.c_str());
+	std::cout << "Export " << file_name << " successfully!" << std::endl;
+}
+
 void LevelEditor::loadVoiceoverXml(std::string file_name)
 {
 	initVoiceover();
@@ -338,6 +451,60 @@ void LevelEditor::loadWorldMapXml(std::string file_name)
 	std::cout << "Load " << file_name << " successfully!" << std::endl;
 }
 
+void LevelEditor::loadPlotXml(std::string file_name)
+{
+	using namespace tinyxml2;
+	tinyxml2::XMLDocument doc;
+	doc.LoadFile(file_name.c_str());
+	XMLElement* parent = doc.FirstChildElement("Plot");
+	ui.plotname_lineEdit->setText(QString(parent->Attribute("PlotName")));
+	ui.scenename_lineEdit->setText(QString(parent->Attribute("SceneName")));
+	ui.frame2->setBackgroundPath(QString(parent->Attribute("Background")).toStdString());
+
+	XMLElement* node = parent->FirstChildElement("Frames");
+	plotFrames.clear();
+	XMLElement* frame_item = node->FirstChildElement();
+	for (; frame_item; frame_item = frame_item->NextSiblingElement())
+	{
+		PlotFrame frame;
+		XMLElement* dialog_node = frame_item->FirstChildElement("Dialog");
+		std::string name = dialog_node->Attribute("Name");
+		if (!name.size())
+			frame.dialog_box = NULL;
+		else
+		{
+			frame.dialog_box = new DialogBox;
+			frame.dialog_box->character_name = name;
+			frame.dialog_box->character_path = dialog_node->Attribute("ImgPath");
+			frame.dialog_box->pos = DialogPos(QString(dialog_node->Attribute("pos")).toInt());
+			XMLElement*txt_node = dialog_node->FirstChildElement("Txt");
+			frame.dialog_box->txt = txt_node->GetText();
+			ui.charactername_lineEdit->setText(name.c_str());
+			ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage(std::string("../Data/Assets/"+frame.dialog_box->character_path).c_str())));
+			ui.plot_textEdit->setText(frame.dialog_box->txt.c_str());
+			ui.comboBox->setCurrentIndex(frame.dialog_box->pos);
+		}
+		XMLElement *items_node = frame_item->FirstChildElement("Items");
+		XMLElement *item_node = items_node->FirstChildElement();
+
+		for (; item_node; item_node = item_node->NextSiblingElement())
+		{
+			ImageItem image_item;
+			image_item.img_paths = QString(item_node->Attribute("ImagePath")).toStdString();
+			image_item.pos.x = QString(item_node->Attribute("PosX")).toInt();
+			image_item.pos.y = QString(item_node->Attribute("PosY")).toInt();
+			image_item.mirrored = (QString(items_node->Attribute("mirrored")) == QString("true"));
+			image_item.type = QString(items_node->Attribute("type")).toInt();
+			frame.img_items.push_back(image_item);
+		}
+		plotFrames.push_back(frame);
+	}
+	ui.plot_scrollBar->setRange(0, plotFrames.size() - 1);
+	ui.plot_scrollBar->setSliderPosition(0);
+	ui.frame2->updateCurFrame(0);
+	std::cout << "Load " << file_name << " successfully!" << std::endl;
+}
+
 void LevelEditor::initVoiceover()
 {
 	ui.bg_label->clear();
@@ -356,4 +523,6 @@ void LevelEditor::on_actionLoad_Xml_triggered()
 		loadVoiceoverXml(filename.toStdString());
 	else if (ui.tabWidget->currentIndex() == 1)
 		loadWorldMapXml(filename.toStdString());
+	else
+		loadPlotXml(filename.toStdString());
 }

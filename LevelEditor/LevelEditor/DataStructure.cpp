@@ -1,14 +1,19 @@
 #include "DataStructure.h"
-PlotFrame::PlotFrame(PlotFrame& f)
+PlotFrame::PlotFrame(const PlotFrame& f)
 { 
-	image_items.assign(f.image_items.begin(), f.image_items.end());
-	dialog_box = new DialogBox();
-	*dialog_box = *f.dialog_box;
+	img_items.assign(f.img_items.begin(), f.img_items.end());
+	if (f.dialog_box)
+	{
+		dialog_box = new DialogBox();
+		*dialog_box = *f.dialog_box;
+	}
+	else
+		dialog_box = NULL;
 }
 
 PlotFrame& PlotFrame::operator = (PlotFrame f)
 {
-	image_items.assign(f.image_items.begin(), f.image_items.end());
+	img_items.assign(f.img_items.begin(), f.img_items.end());
 	dialog_box = new DialogBox();
 	*dialog_box = *f.dialog_box;
 	return (*this);

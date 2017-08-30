@@ -30,16 +30,20 @@ public slots:
 
 	void on_voiceover_listWidget_currentRowChanged(int);
 	void on_worldframe_scrollBar_valueChanged(int);
+	void on_plot_scrollBar_valueChanged(int);
 
 	void on_cur_frame_lineEdit_editingFinished();
+	void on_cur_plotframe_lineEdit_editingFinished();
 	void on_actionSave_Xml_triggered();
 	void on_actionLoad_Xml_triggered();
 
 protected:
 	void exportVoiceoverXml(std::string file_name);
 	void exportWorldMapXml(std::string file_name);
+	void exportPlotXml(std::string file_name);
 	void loadVoiceoverXml(std::string file_name);
 	void loadWorldMapXml(std::string file_name);
+	void loadPlotXml(std::string file_name);
 	void initVoiceover();
 private:
 	Ui::LevelEditorClass ui;

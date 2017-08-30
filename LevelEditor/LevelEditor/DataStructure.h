@@ -21,6 +21,7 @@ struct ImageItem
 	Position pos;
 	std::string img_paths;
 	int type;
+	bool mirrored;
 };
 
 struct WorldMapFrame
@@ -40,11 +41,11 @@ struct DialogBox
 
 struct PlotFrame
 {
-	std::vector<ImageItem> image_items;
+	std::vector<ImageItem> img_items;
 	DialogBox* dialog_box;
 	PlotFrame(){ dialog_box = NULL; }
 	~PlotFrame(){ SAFE_DELETE(dialog_box); }
-	PlotFrame(PlotFrame& f);
+	PlotFrame(const PlotFrame& f);
 	PlotFrame& operator = (PlotFrame f);
 };
 

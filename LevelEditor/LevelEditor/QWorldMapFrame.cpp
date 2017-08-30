@@ -89,7 +89,6 @@ void QWorldMapFrame::mousePressEvent(QMouseEvent* mouse_event)
 		QPoint pt = mapFromGlobal(QCursor::pos());
 		cur_sel_label_id = getSeledImgId(pt);
 		button_state = 1;
-		//init_pt = pt;
 	}
 }
 
@@ -109,7 +108,6 @@ void QWorldMapFrame::mouseMoveEvent(QMouseEvent * mouse_event)
 		labels[id]->setGeometry(pt.x(),pt.y(),label->width(), label->height());
 		(*worldMapFrames)[cur_slider].img_items[id].pos.x = pt.x();
 		(*worldMapFrames)[cur_slider].img_items[id].pos.y = pt.y();
-		//init_pt = pt;
 	}
 }
 
@@ -156,6 +154,7 @@ void QWorldMapFrame::deleteImage()
 	(*it3)->setVisible(false);
 	SAFE_DELETE(*it3);
 	labels.erase(it3);
+	cur_sel_label_id = -1;
 }
 
 void QWorldMapFrame::changeImage()

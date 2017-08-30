@@ -493,7 +493,7 @@ void LevelEditor::loadPlotXml(std::string file_name)
 			image_item.img_paths = QString(item_node->Attribute("ImagePath")).toStdString();
 			image_item.pos.x = QString(item_node->Attribute("PosX")).toInt();
 			image_item.pos.y = QString(item_node->Attribute("PosY")).toInt();
-			image_item.mirrored = (QString(items_node->Attribute("mirrored")) == QString("true"));
+			image_item.mirrored = (QString(item_node->Attribute("mirrored")) == QString("true"));
 			image_item.type = QString(items_node->Attribute("type")).toInt();
 			frame.img_items.push_back(image_item);
 		}

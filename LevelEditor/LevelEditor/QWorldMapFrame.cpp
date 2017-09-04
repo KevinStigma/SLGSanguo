@@ -13,6 +13,7 @@ deleteImg("deleteImg", this), changeImg("changeImg", this), cur_slider(0), cur_s
 	connect(&insertImg, SIGNAL(triggered()), this, SLOT(insertImage()));
 	connect(&changeImg, SIGNAL(triggered()), this, SLOT(changeImage()));
 	connect(&deleteImg, SIGNAL(triggered()), this, SLOT(deleteImage()));
+
 }
 
 QWorldMapFrame::~QWorldMapFrame()

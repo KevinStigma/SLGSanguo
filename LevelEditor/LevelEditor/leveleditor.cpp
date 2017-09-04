@@ -8,6 +8,7 @@ LevelEditor::LevelEditor(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
+	setFixedSize(946, 668);
 	ui.tabWidget->setStyleSheet("QTabWidget:pane{ border: 1px solid grey; top: -1px; background - color:grey;}\
 	QTabBar::tab{ height:22px; background - color:grey; margin - right: 2px; margin - bottom:-2px; }\
 	QTabBar::tab:selected{ border:1px solid grey; border - bottom - color: none; }\
@@ -494,7 +495,7 @@ void LevelEditor::loadPlotXml(std::string file_name)
 			image_item.pos.x = QString(item_node->Attribute("PosX")).toInt();
 			image_item.pos.y = QString(item_node->Attribute("PosY")).toInt();
 			image_item.mirrored = (QString(item_node->Attribute("mirrored")) == QString("true"));
-			image_item.type = QString(items_node->Attribute("type")).toInt();
+			image_item.type = QString(item_node->Attribute("type")).toInt();
 			frame.img_items.push_back(image_item);
 		}
 		plotFrames.push_back(frame);

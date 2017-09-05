@@ -2,12 +2,13 @@
 #include <iostream>
 #include <cassert>
 #include <QFileDialog>
+#include "GlobalSys.h"
 
 QPlotFrame::QPlotFrame(QWidget* parent, Qt::WindowFlags f) :QFrame(parent, f), bg_label(NULL), plotFrames(NULL), plot_item_label(NULL),
 plot_item_comboBox(NULL),plot_item_checkBox(NULL),cur_slider(0),insertImg("insertImg", this), deleteImg("deleteImg", this), 
 cur_sel_label_id(-1)
 {
-	dialog_label.setPixmap(QPixmap::fromImage(QImage("../Data/Assets/Mark/47-1.bmp").scaled(345,76)));
+	dialog_label.setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath+"Mark/47-1.bmp").c_str()).scaled(345,76)));
 	dialog_label.setGeometry(0, 0, 345, 76);
 	dialog_label.setParent(this);
 	dialog_label.show();
@@ -28,7 +29,7 @@ QPlotFrame::~QPlotFrame()
 
 void QPlotFrame::insertImage()
 {
-	QString filename = QFileDialog::getOpenFileName(this, tr("Load Image"), "../Data/Assets/pmapobj", "Image files(*.jpg *.png *.bmp)", 0);
+	QString filename = QFileDialog::getOpenFileName(this, tr("Load Image"),std::string(g_pGlobalSys->assetPath+"pmapobj").c_str(), "Image files(*.jpg *.png *.bmp)", 0);
 	if (!filename.size())
 		return;
 	assert(plotFrames);
@@ -110,7 +111,7 @@ void QPlotFrame::loadImages(int cur_fra)
 	{
 		int type = (*plotFrames)[cur_fra].img_items[i].type;
 		bool mirrored = (*plotFrames)[cur_fra].img_items[i].mirrored;
-		QImage image=QImage(std::string("../Data/Assets/" + img_items[i].img_paths).c_str()).copy(0,type*64,48,64);
+		QImage image=QImage(std::string(g_pGlobalSys->assetPath + img_items[i].img_paths).c_str()).copy(0,type*64,48,64);
 		if (mirrored)
 			image = image.mirrored(true, false);
 		images.push_back(image);
@@ -120,7 +121,7 @@ void QPlotFrame::loadImages(int cur_fra)
 void QPlotFrame::setBackgroundPath(std::string str)
 { 
 	bg_local_path = str;
-	bg_label->setPixmap(QPixmap::fromImage(QImage(std::string("../Data/Assets/" + str).c_str()))); 
+	bg_label->setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath + str).c_str()))); 
 	bg_label->lower();
 }
 
@@ -182,7 +183,7 @@ void QPlotFrame::contextMenuEvent(QContextMenuEvent *e)
 
 void QPlotFrame::mouseDoubleClickEvent(QMouseEvent * e)
 {
-	QString filename = QFileDialog::getOpenFileName(this, tr("Load background"), "../Data/Assets/Maps", "Image files(*.jpg *.png *.bmp)", 0);
+	QString filename = QFileDialog::getOpenFileName(this, tr("Load background"),std::string(g_pGlobalSys->assetPath+"Maps").c_str(), "Image files(*.jpg *.png *.bmp)", 0);
 	if (!filename.size())
 		return;
 
@@ -213,9 +214,9 @@ void QPlotFrame::mousePressEvent(QMouseEvent* mouse_event)
 			bool mirrored = (*plotFrames)[cur_slider].img_items[cur_sel_label_id].mirrored;
 			std::string&str = (*plotFrames)[cur_slider].img_items[cur_sel_label_id].img_paths;
 			if (!mirrored)
-				plot_item_label->setPixmap(QPixmap::fromImage(QImage(std::string("../Data/Assets/"+str).c_str()).copy(0,type*64,48,64)));
+				plot_item_label->setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath+str).c_str()).copy(0,type*64,48,64)));
 			else
-				plot_item_label->setPixmap(QPixmap::fromImage(QImage(std::string("../Data/Assets/" + str).c_str()).copy(0, type * 64, 48, 64).mirrored(true,false)));
+				plot_item_label->setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath+str).c_str()).copy(0, type * 64, 48, 64).mirrored(true,false)));
 			plot_item_comboBox->setCurrentIndex(type);
 			plot_item_checkBox->setChecked(mirrored);
 		}
@@ -245,7 +246,7 @@ void QPlotFrame::changeCurItemImg()
 {
 	if (cur_sel_label_id == -1)
 		return;
-	QString filename = QFileDialog::getOpenFileName(this, tr("Load plot item image"), "../Data/Assets/pmapobj", "Image files(*.jpg *.png *.bmp)", 0);
+	QString filename = QFileDialog::getOpenFileName(this, tr("Load plot item image"), std::string(g_pGlobalSys->assetPath+"pmapobj").c_str(), "Image files(*.jpg *.png *.bmp)", 0);
 	if (!filename.size())
 		return;
 	
@@ -266,7 +267,7 @@ void QPlotFrame::changeCurItemType(int index)
 {
 	if (index < 0 || cur_sel_label_id == -1)
 		return;
-	std::string filename = "../Data/Assets/" + (*plotFrames)[cur_slider].img_items[cur_sel_label_id].img_paths;
+	std::string filename = g_pGlobalSys->assetPath + (*plotFrames)[cur_slider].img_items[cur_sel_label_id].img_paths;
 	images[cur_sel_label_id] = QImage(filename.c_str()).copy(0, index*64, 48, 64);
 	if ((*plotFrames)[cur_slider].img_items[cur_sel_label_id].mirrored)
 		images[cur_sel_label_id] = images[cur_sel_label_id].mirrored(true, false);
@@ -279,7 +280,7 @@ void QPlotFrame::mirrorCurItemImg(int state)
 {
 	if (cur_sel_label_id == -1)
 		return;
-	std::string filename = "../Data/Assets/" + (*plotFrames)[cur_slider].img_items[cur_sel_label_id].img_paths;
+	std::string filename = g_pGlobalSys->assetPath + (*plotFrames)[cur_slider].img_items[cur_sel_label_id].img_paths;
 	int type = (*plotFrames)[cur_slider].img_items[cur_sel_label_id].type;
 	if (state == 0)
 	{

@@ -2,6 +2,7 @@
 #include <cassert>
 #include <iostream>
 #include <QFileDialog>
+#include "GlobalSys.h"
 
 QWorldMapFrame::QWorldMapFrame(QWidget* parent, Qt::WindowFlags f) :QFrame(parent, f), worldMapFrames(NULL), insertImg("insertImg",this),
 deleteImg("deleteImg", this), changeImg("changeImg", this), cur_slider(0), cur_sel_label_id(-1), button_state(0)
@@ -44,7 +45,7 @@ void QWorldMapFrame::loadImages(int cur_val)
 	images.clear();
 	auto& img_items = (*worldMapFrames)[cur_val].img_items;
 	for (int i = 0; i <(int)img_items.size(); i++)
-		images.push_back(QImage(std::string("../Data/Assets/"+img_items[i].img_paths).c_str()));
+		images.push_back(QImage(std::string(g_pGlobalSys->assetPath+img_items[i].img_paths).c_str()));
 }
 
 void QWorldMapFrame::updateLabels(int cur_val)
@@ -121,7 +122,7 @@ void QWorldMapFrame::updateCurFrame(int val)
 
 void QWorldMapFrame::insertImage()
 {
-	QString filename = QFileDialog::getOpenFileName(this, tr("Load Image"), "../Data/Assets/Face", "Image files(*.jpg *.png *.bmp)", 0);
+	QString filename = QFileDialog::getOpenFileName(this, tr("Load Image"), std::string(g_pGlobalSys->assetPath+"Face").c_str(), "Image files(*.jpg *.png *.bmp)", 0);
 	if (!filename.size())
 		return;
 	assert(worldMapFrames);
@@ -162,7 +163,7 @@ void QWorldMapFrame::changeImage()
 {
 	if (cur_sel_label_id == -1)
 		return;
-	QString filename = QFileDialog::getOpenFileName(this, tr("Load Image"), "../Data/Assets/Face", "Image files(*.jpg *.png *.bmp)", 0);
+	QString filename = QFileDialog::getOpenFileName(this, tr("Load Image"),std::string(g_pGlobalSys->assetPath+"Face").c_str(), "Image files(*.jpg *.png *.bmp)", 0);
 	if (!filename.size())
 		return;
 	assert(worldMapFrames);

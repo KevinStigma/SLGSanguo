@@ -1,5 +1,6 @@
 ﻿#include "leveleditor.h"
 #include "tinyxml2.h"
+#include "GlobalSys.h"
 #include <iostream>
 #include <cassert>
 #include <QFileDialog>
@@ -13,7 +14,7 @@ LevelEditor::LevelEditor(QWidget *parent)
 	QTabBar::tab{ height:22px; background - color:grey; margin - right: 2px; margin - bottom:-2px; }\
 	QTabBar::tab:selected{ border:1px solid grey; border - bottom - color: none; }\
 	QTabBar::tab:!selected{ border - bottom: 3px solid grey; }");
-	ui.world_map_label->setPixmap(QPixmap::fromImage(QImage("../Data/Assets/Maps/1- (114).JPG")));
+	ui.world_map_label->setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath+"Maps/1- (114).JPG").c_str())));
 	ui.worldframe_scrollBar->setMaximum(0);
 	ui.cur_frame_lineEdit->setText("0");
 	worldMapFrames.resize(1);
@@ -32,7 +33,7 @@ LevelEditor::LevelEditor(QWidget *parent)
 
 LevelEditor::~LevelEditor()
 {
-
+	SAFE_DELETE(g_pGlobalSys);
 }
 
 void LevelEditor::on_addTextButton_clicked()
@@ -114,7 +115,7 @@ void LevelEditor::on_defineTxt_pushButton_clicked()
 
 void LevelEditor::on_loadCharacterImg_pushButton_clicked()
 {
-	QString filename = QFileDialog::getOpenFileName(this, tr("Load character image"), "../Data/Assets/Face", "Image files(*.jpg *.png *.bmp)", 0);
+	QString filename = QFileDialog::getOpenFileName(this, tr("Load character image"), std::string(g_pGlobalSys->assetPath+ "Face").c_str(), "Image files(*.jpg *.png *.bmp)", 0);
 	if (!filename.size())
 		return;
 	std::string img_name = filename.toStdString();
@@ -198,7 +199,7 @@ void LevelEditor::on_plot_scrollBar_valueChanged(int val)
 	{
 		ui.plot_textEdit->setText(plotFrames[val].dialog_box->txt.c_str());
 		ui.charactername_lineEdit->setText(plotFrames[val].dialog_box->character_name.c_str());
-		ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage(std::string("../Data/Assets/"+plotFrames[val].dialog_box->character_path).c_str())));
+		ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath +plotFrames[val].dialog_box->character_path).c_str())));
 	}
 	else
 	{
@@ -408,7 +409,7 @@ void LevelEditor::loadVoiceoverXml(std::string file_name)
 	XMLElement* node = parent->FirstChildElement("Background");
 	std::string local_path(node->Attribute("ImagePath"));
 	ui.local_img_label->setText(local_path.c_str());
-	QImage image = QImage(std::string("../Data/Assets/"+local_path).c_str()).scaled(ui.bg_label->width(), ui.bg_label->height());
+	QImage image = QImage(std::string(g_pGlobalSys->assetPath+local_path).c_str()).scaled(ui.bg_label->width(), ui.bg_label->height());
 	ui.bg_label->setPixmap(QPixmap::fromImage(image));
 
 	node = parent->FirstChildElement("Texts");
@@ -481,7 +482,7 @@ void LevelEditor::loadPlotXml(std::string file_name)
 			XMLElement*txt_node = dialog_node->FirstChildElement("Txt");
 			frame.dialog_box->txt = txt_node->GetText();
 			ui.charactername_lineEdit->setText(name.c_str());
-			ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage(std::string("../Data/Assets/"+frame.dialog_box->character_path).c_str())));
+			ui.characterImg_label->setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath+frame.dialog_box->character_path).c_str())));
 			ui.plot_textEdit->setText(frame.dialog_box->txt.c_str());
 			ui.comboBox->setCurrentIndex(frame.dialog_box->pos);
 		}

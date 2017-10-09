@@ -36,6 +36,7 @@ public slots:
 	void on_cur_plotframe_lineEdit_editingFinished();
 	void on_actionSave_Xml_triggered();
 	void on_actionLoad_Xml_triggered();
+	void on_actionConvertImage_triggered();
 
 protected:
 	void exportVoiceoverXml(std::string file_name);

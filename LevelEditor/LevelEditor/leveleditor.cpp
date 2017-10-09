@@ -4,6 +4,7 @@
 #include <iostream>
 #include <cassert>
 #include <QFileDialog>
+#include <algorithm> 
 
 LevelEditor::LevelEditor(QWidget *parent)
 	: QMainWindow(parent)
@@ -527,4 +528,44 @@ void LevelEditor::on_actionLoad_Xml_triggered()
 		loadWorldMapXml(filename.toStdString());
 	else
 		loadPlotXml(filename.toStdString());
+}
+
+QFileInfoList GetFileList(QString path)
+{
+	QDir dir(path);
+	QFileInfoList file_list = dir.entryInfoList(QDir::Files | QDir::Hidden | QDir::NoSymLinks);
+	QFileInfoList folder_list = dir.entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot);
+
+	for (int i = 0; i != folder_list.size(); i++)
+	{
+		QString name = folder_list.at(i).absoluteFilePath();
+		QFileInfoList child_file_list = GetFileList(name);
+		file_list.append(child_file_list);
+	}
+	return file_list;
+}
+
+void LevelEditor::on_actionConvertImage_triggered()
+{
+	QString path_name = QFileDialog::getExistingDirectory(this, tr("Open Dir"), "../../Data/Assets");
+	if (!path_name.size())
+		return;
+	auto file_list = GetFileList(path_name);
+	for (int i = 0; i < file_list.size(); i++)
+	{
+		std::string file_name = file_list[i].absoluteFilePath().toStdString();
+		int dot_ind=file_name.find_last_of('.');
+		if (dot_ind == -1)
+			continue;
+		std::string ex_name = file_name.substr(dot_ind + 1, 3);
+		std::transform(ex_name.begin(), ex_name.end(), ex_name.begin(), ::tolower);
+		if (ex_name == "bmp" || ex_name == "jpg")
+		{
+			std::cout << file_name << std::endl;
+			QImage image(file_name.c_str());
+			std::string new_name = file_name.substr(0, dot_ind) + ".png";
+			QImage new_img= image.convertToFormat(QImage::Format::Format_ARGB32);
+			new_img.save(new_name.c_str(),"png");
+		}
+	}
 }

@@ -735,7 +735,14 @@
     <addaction name="actionLoad_Xml"/>
     <addaction name="actionSave_Xml"/>
    </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionConvertImage"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -754,6 +761,11 @@
   <action name="actionSave_Xml">
    <property name="text">
     <string>Save Xml</string>
+   </property>
+  </action>
+  <action name="actionConvertImage">
+   <property name="text">
+    <string>ConvertImage</string>
    </property>
   </action>
  </widget>

@@ -53,6 +53,10 @@ void GamesInfoEditor::on_listWidget_currentRowChanged(int ind)
 		cur_gen.yunqi = atoi(ui.yunqiEdit->text().toStdString().c_str());
 		cur_gen.biography = ui.biographyEdit->toPlainText().toStdString();
 		cur_gen.name = ui.listWidget->item(last_sel_row)->text().toStdString();
+		cur_gen.critical = ui.criticalEdit->text().toStdString();
+		cur_gen.retreate = ui.retreatEdit->text().toStdString();
+		cur_gen.hpadd = atoi(ui.hpEdit->text().toStdString().c_str());
+		cur_gen.mpadd = atoi(ui.mpEdit->text().toStdString().c_str());
 	}
 	last_sel_row = ind;
 	if (ind < 0)
@@ -64,6 +68,10 @@ void GamesInfoEditor::on_listWidget_currentRowChanged(int ind)
 	ui.yunqiEdit->setText(QString::number(general.yunqi));
 	ui.minjieEdit->setText(QString::number(general.minjie));
 	ui.biographyEdit->setText(general.biography.c_str());
+	ui.criticalEdit->setText(general.critical.c_str());
+	ui.retreatEdit->setText(general.retreate.c_str());
+	ui.hpEdit->setText(QString::number(general.hpadd));
+	ui.mpEdit->setText(QString::number(general.mpadd));
 }
 
 void GamesInfoEditor::setItemEditable(QListWidgetItem * item)
@@ -89,10 +97,19 @@ void GamesInfoEditor::exportGeneralsXML(const std::string& file_name)
 		cap_node->SetAttribute("Tongshuai", QString::number(generals[i].tongshuai).toStdString().c_str());
 		cap_node->SetAttribute("Minjie", QString::number(generals[i].minjie).toStdString().c_str());
 		cap_node->SetAttribute("Yunqi", QString::number(generals[i].yunqi).toStdString().c_str());
+		cap_node->SetAttribute("HpAdd", QString::number(generals[i].hpadd).toStdString().c_str());
+		cap_node->SetAttribute("MpAdd", QString::number(generals[i].mpadd).toStdString().c_str());
 		gen_node->InsertEndChild(cap_node);
 		XMLElement* bio_node = doc.NewElement("Biography");
 		bio_node->SetText(generals[i].biography.c_str());
 		gen_node->InsertEndChild(bio_node);
+		XMLElement* critical_node = doc.NewElement("Critical");
+		critical_node->SetText(generals[i].critical.c_str());
+		gen_node->InsertEndChild(critical_node);
+		XMLElement* retreat_node = doc.NewElement("Retreat");
+		retreat_node->SetText(generals[i].retreate.c_str());
+		gen_node->InsertEndChild(retreat_node);
+
 		parent->InsertEndChild(gen_node);
 	}
 	doc.SaveFile(file_name.c_str());

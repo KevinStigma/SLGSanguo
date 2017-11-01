@@ -8,7 +8,7 @@ QPlotFrame::QPlotFrame(QWidget* parent, Qt::WindowFlags f) :QFrame(parent, f), b
 plot_item_comboBox(NULL),plot_item_checkBox(NULL),cur_slider(0),insertImg("insertImg", this), deleteImg("deleteImg", this), 
 cur_sel_label_id(-1)
 {
-	dialog_label.setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath+"Mark/47-1.bmp").c_str()).scaled(345,76)));
+	dialog_label.setPixmap(QPixmap::fromImage(QImage(std::string(g_pGlobalSys->assetPath+"Mark/47-1.png").c_str()).scaled(345,76)));
 	dialog_label.setGeometry(0, 0, 345, 76);
 	dialog_label.setParent(this);
 	dialog_label.show();

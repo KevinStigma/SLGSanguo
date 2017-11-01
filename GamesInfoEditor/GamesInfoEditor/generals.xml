@@ -1,0 +1,350 @@
+<Generals>
+    <General Name="曹操" ImgPath="">
+        <Capacity Wuli="82" Zhili="92" Tongshuai="98" Minjie="80" Yunqi="84"/>
+        <Biography></Biography>
+    </General>
+    <General Name="夏侯惇" ImgPath="">
+        <Capacity Wuli="95" Zhili="64" Tongshuai="82" Minjie="90" Yunqi="66"/>
+        <Biography></Biography>
+    </General>
+    <General Name="夏侯渊" ImgPath="">
+        <Capacity Wuli="91" Zhili="44" Tongshuai="80" Minjie="78" Yunqi="66"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张辽" ImgPath="">
+        <Capacity Wuli="92" Zhili="86" Tongshuai="88" Minjie="78" Yunqi="94"/>
+        <Biography></Biography>
+    </General>
+    <General Name="曹洪" ImgPath="">
+        <Capacity Wuli="84" Zhili="80" Tongshuai="78" Minjie="60" Yunqi="70"/>
+        <Biography></Biography>
+    </General>
+    <General Name="曹仁" ImgPath="">
+        <Capacity Wuli="88" Zhili="70" Tongshuai="92" Minjie="64" Yunqi="62"/>
+        <Biography></Biography>
+    </General>
+    <General Name="于禁" ImgPath="">
+        <Capacity Wuli="78" Zhili="60" Tongshuai="90" Minjie="90" Yunqi="61"/>
+        <Biography></Biography>
+    </General>
+    <General Name="徐晃" ImgPath="">
+        <Capacity Wuli="93" Zhili="75" Tongshuai="84" Minjie="65" Yunqi="85"/>
+        <Biography></Biography>
+    </General>
+    <General Name="乐进" ImgPath="">
+        <Capacity Wuli="85" Zhili="48" Tongshuai="80" Minjie="62" Yunqi="70"/>
+        <Biography></Biography>
+    </General>
+    <General Name="李典" ImgPath="">
+        <Capacity Wuli="78" Zhili="82" Tongshuai="75" Minjie="77" Yunqi="85"/>
+        <Biography></Biography>
+    </General>
+    <General Name="庞德" ImgPath="">
+        <Capacity Wuli="94" Zhili="78" Tongshuai="85" Minjie="62" Yunqi="60"/>
+        <Biography></Biography>
+    </General>
+    <General Name="典韦" ImgPath="">
+        <Capacity Wuli="99" Zhili="32" Tongshuai="74" Minjie="100" Yunqi="65"/>
+        <Biography></Biography>
+    </General>
+    <General Name="许褚" ImgPath="">
+        <Capacity Wuli="96" Zhili="36" Tongshuai="75" Minjie="90" Yunqi="77"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张郃" ImgPath="">
+        <Capacity Wuli="90" Zhili="84" Tongshuai="88" Minjie="56" Yunqi="74"/>
+        <Biography></Biography>
+    </General>
+    <General Name="曹彰" ImgPath="">
+        <Capacity Wuli="92" Zhili="52" Tongshuai="87" Minjie="75" Yunqi="76"/>
+        <Biography></Biography>
+    </General>
+    <General Name="曹丕" ImgPath="">
+        <Capacity Wuli="64" Zhili="88" Tongshuai="85" Minjie="90" Yunqi="42"/>
+        <Biography></Biography>
+    </General>
+    <General Name="甄宓" ImgPath="">
+        <Capacity Wuli="75" Zhili="64" Tongshuai="56" Minjie="92" Yunqi="68"/>
+        <Biography></Biography>
+    </General>
+    <General Name="邓艾" ImgPath="">
+        <Capacity Wuli="88" Zhili="93" Tongshuai="90" Minjie="46" Yunqi="86"/>
+        <Biography></Biography>
+    </General>
+    <General Name="钟会" ImgPath="">
+        <Capacity Wuli="54" Zhili="91" Tongshuai="89" Minjie="65" Yunqi="80"/>
+        <Biography></Biography>
+    </General>
+    <General Name="荀彧" ImgPath="">
+        <Capacity Wuli="46" Zhili="96" Tongshuai="75" Minjie="68" Yunqi="90"/>
+        <Biography></Biography>
+    </General>
+    <General Name="荀攸" ImgPath="">
+        <Capacity Wuli="48" Zhili="94" Tongshuai="72" Minjie="58" Yunqi="88"/>
+        <Biography></Biography>
+    </General>
+    <General Name="郭嘉" ImgPath="">
+        <Capacity Wuli="22" Zhili="98" Tongshuai="64" Minjie="45" Yunqi="90"/>
+        <Biography></Biography>
+    </General>
+    <General Name="满宠" ImgPath="">
+        <Capacity Wuli="56" Zhili="90" Tongshuai="86" Minjie="68" Yunqi="74"/>
+        <Biography></Biography>
+    </General>
+    <General Name="贾诩" ImgPath="">
+        <Capacity Wuli="52" Zhili="97" Tongshuai="77" Minjie="42" Yunqi="90"/>
+        <Biography></Biography>
+    </General>
+    <General Name="司马懿" ImgPath="">
+        <Capacity Wuli="64" Zhili="98" Tongshuai="96" Minjie="42" Yunqi="79"/>
+        <Biography></Biography>
+    </General>
+    <General Name="程昱" ImgPath="">
+        <Capacity Wuli="52" Zhili="92" Tongshuai="77" Minjie="39" Yunqi="63"/>
+        <Biography></Biography>
+    </General>
+    <General Name="刘备" ImgPath="">
+        <Capacity Wuli="78" Zhili="76" Tongshuai="80" Minjie="86" Yunqi="100"/>
+        <Biography></Biography>
+    </General>
+    <General Name="关羽" ImgPath="">
+        <Capacity Wuli="97" Zhili="76" Tongshuai="92" Minjie="80" Yunqi="85"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张飞" ImgPath="">
+        <Capacity Wuli="98" Zhili="33" Tongshuai="85" Minjie="84" Yunqi="62"/>
+        <Biography></Biography>
+    </General>
+    <General Name="赵云" ImgPath="">
+        <Capacity Wuli="96" Zhili="88" Tongshuai="82" Minjie="90" Yunqi="53"/>
+        <Biography></Biography>
+    </General>
+    <General Name="马超" ImgPath="">
+        <Capacity Wuli="96" Zhili="46" Tongshuai="88" Minjie="74" Yunqi="65"/>
+        <Biography></Biography>
+    </General>
+    <General Name="黄忠" ImgPath="">
+        <Capacity Wuli="93" Zhili="55" Tongshuai="80" Minjie="54" Yunqi="75"/>
+        <Biography></Biography>
+    </General>
+    <General Name="诸葛亮" ImgPath="">
+        <Capacity Wuli="32" Zhili="100" Tongshuai="98" Minjie="46" Yunqi="86"/>
+        <Biography></Biography>
+    </General>
+    <General Name="关兴" ImgPath="">
+        <Capacity Wuli="89" Zhili="46" Tongshuai="78" Minjie="75" Yunqi="62"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张苞" ImgPath="">
+        <Capacity Wuli="88" Zhili="62" Tongshuai="76" Minjie="81" Yunqi="42"/>
+        <Biography></Biography>
+    </General>
+    <General Name="魏延" ImgPath="">
+        <Capacity Wuli="92" Zhili="68" Tongshuai="84" Minjie="85" Yunqi="44"/>
+        <Biography></Biography>
+    </General>
+    <General Name="姜维" ImgPath="">
+        <Capacity Wuli="90" Zhili="92" Tongshuai="91" Minjie="84" Yunqi="62"/>
+        <Biography></Biography>
+    </General>
+    <General Name="廖化" ImgPath="">
+        <Capacity Wuli="84" Zhili="62" Tongshuai="77" Minjie="75" Yunqi="95"/>
+        <Biography></Biography>
+    </General>
+    <General Name="马岱" ImgPath="">
+        <Capacity Wuli="85" Zhili="45" Tongshuai="76" Minjie="67" Yunqi="53"/>
+        <Biography></Biography>
+    </General>
+    <General Name="关平" ImgPath="">
+        <Capacity Wuli="92" Zhili="48" Tongshuai="77" Minjie="80" Yunqi="69"/>
+        <Biography></Biography>
+    </General>
+    <General Name="王平" ImgPath="">
+        <Capacity Wuli="78" Zhili="70" Tongshuai="82" Minjie="60" Yunqi="53"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张翼" ImgPath="">
+        <Capacity Wuli="77" Zhili="85" Tongshuai="83" Minjie="82" Yunqi="48"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张嶷" ImgPath="">
+        <Capacity Wuli="76" Zhili="80" Tongshuai="84" Minjie="69" Yunqi="83"/>
+        <Biography></Biography>
+    </General>
+    <General Name="孟获" ImgPath="">
+        <Capacity Wuli="84" Zhili="30" Tongshuai="75" Minjie="55" Yunqi="68"/>
+        <Biography></Biography>
+    </General>
+    <General Name="祝融" ImgPath="">
+        <Capacity Wuli="80" Zhili="25" Tongshuai="67" Minjie="68" Yunqi="74"/>
+        <Biography></Biography>
+    </General>
+    <General Name="孟优" ImgPath="">
+        <Capacity Wuli="78" Zhili="26" Tongshuai="71" Minjie="58" Yunqi="82"/>
+        <Biography></Biography>
+    </General>
+    <General Name="法正" ImgPath="">
+        <Capacity Wuli="48" Zhili="96" Tongshuai="75" Minjie="45" Yunqi="67"/>
+        <Biography></Biography>
+    </General>
+    <General Name="庞统" ImgPath="">
+        <Capacity Wuli="58" Zhili="98" Tongshuai="85" Minjie="62" Yunqi="30"/>
+        <Biography></Biography>
+    </General>
+    <General Name="孙乾" ImgPath="">
+        <Capacity Wuli="66" Zhili="84" Tongshuai="68" Minjie="65" Yunqi="76"/>
+        <Biography></Biography>
+    </General>
+    <General Name="糜竺" ImgPath="">
+        <Capacity Wuli="36" Zhili="86" Tongshuai="74" Minjie="24" Yunqi="88"/>
+        <Biography></Biography>
+    </General>
+    <General Name="简雍" ImgPath="">
+        <Capacity Wuli="65" Zhili="85" Tongshuai="60" Minjie="48" Yunqi="72"/>
+        <Biography></Biography>
+    </General>
+    <General Name="蒋琬" ImgPath="">
+        <Capacity Wuli="41" Zhili="92" Tongshuai="82" Minjie="59" Yunqi="78"/>
+        <Biography></Biography>
+    </General>
+    <General Name="费祎" ImgPath="">
+        <Capacity Wuli="31" Zhili="91" Tongshuai="81" Minjie="32" Yunqi="58"/>
+        <Biography></Biography>
+    </General>
+    <General Name="马良" ImgPath="">
+        <Capacity Wuli="36" Zhili="90" Tongshuai="60" Minjie="47" Yunqi="62"/>
+        <Biography></Biography>
+    </General>
+    <General Name="孙坚" ImgPath="">
+        <Capacity Wuli="91" Zhili="71" Tongshuai="90" Minjie="85" Yunqi="64"/>
+        <Biography></Biography>
+    </General>
+    <General Name="孙策" ImgPath="">
+        <Capacity Wuli="92" Zhili="68" Tongshuai="90" Minjie="92" Yunqi="31"/>
+        <Biography></Biography>
+    </General>
+    <General Name="孙权" ImgPath="">
+        <Capacity Wuli="65" Zhili="87" Tongshuai="86" Minjie="65" Yunqi="76"/>
+        <Biography></Biography>
+    </General>
+    <General Name="周瑜" ImgPath="">
+        <Capacity Wuli="72" Zhili="96" Tongshuai="95" Minjie="61" Yunqi="48"/>
+        <Biography></Biography>
+    </General>
+    <General Name="鲁肃" ImgPath="">
+        <Capacity Wuli="77" Zhili="94" Tongshuai="92" Minjie="54" Yunqi="78"/>
+        <Biography></Biography>
+    </General>
+    <General Name="吕蒙" ImgPath="">
+        <Capacity Wuli="85" Zhili="91" Tongshuai="88" Minjie="80" Yunqi="69"/>
+        <Biography></Biography>
+    </General>
+    <General Name="陆逊" ImgPath="">
+        <Capacity Wuli="64" Zhili="95" Tongshuai="94" Minjie="55" Yunqi="85"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张昭" ImgPath="">
+        <Capacity Wuli="30" Zhili="88" Tongshuai="65" Minjie="26" Yunqi="48"/>
+        <Biography></Biography>
+    </General>
+    <General Name="张纮" ImgPath="">
+        <Capacity Wuli="25" Zhili="90" Tongshuai="61" Minjie="48" Yunqi="63"/>
+        <Biography></Biography>
+    </General>
+    <General Name="顾雍" ImgPath="">
+        <Capacity Wuli="52" Zhili="87" Tongshuai="46" Minjie="71" Yunqi="57"/>
+        <Biography></Biography>
+    </General>
+    <General Name="步骘" ImgPath="">
+        <Capacity Wuli="56" Zhili="89" Tongshuai="77" Minjie="64" Yunqi="73"/>
+        <Biography></Biography>
+    </General>
+    <General Name="诸葛瑾" ImgPath="">
+        <Capacity Wuli="45" Zhili="86" Tongshuai="64" Minjie="33" Yunqi="90"/>
+        <Biography></Biography>
+    </General>
+    <General Name="太史慈" ImgPath="">
+        <Capacity Wuli="94" Zhili="65" Tongshuai="87" Minjie="78" Yunqi="59"/>
+        <Biography></Biography>
+    </General>
+    <General Name="甘宁" ImgPath="">
+        <Capacity Wuli="95" Zhili="48" Tongshuai="88" Minjie="92" Yunqi="76"/>
+        <Biography></Biography>
+    </General>
+    <General Name="周泰" ImgPath="">
+        <Capacity Wuli="93" Zhili="35" Tongshuai="76" Minjie="85" Yunqi="68"/>
+        <Biography></Biography>
+    </General>
+    <General Name="潘璋" ImgPath="">
+        <Capacity Wuli="82" Zhili="65" Tongshuai="74" Minjie="48" Yunqi="69"/>
+        <Biography></Biography>
+    </General>
+    <General Name="陈武" ImgPath="">
+        <Capacity Wuli="78" Zhili="59" Tongshuai="75" Minjie="60" Yunqi="69"/>
+        <Biography></Biography>
+    </General>
+    <General Name="凌统" ImgPath="">
+        <Capacity Wuli="91" Zhili="45" Tongshuai="82" Minjie="66" Yunqi="80"/>
+        <Biography></Biography>
+    </General>
+    <General Name="朱然" ImgPath="">
+        <Capacity Wuli="86" Zhili="51" Tongshuai="83" Minjie="58" Yunqi="62"/>
+        <Biography></Biography>
+    </General>
+    <General Name="朱桓" ImgPath="">
+        <Capacity Wuli="84" Zhili="85" Tongshuai="85" Minjie="65" Yunqi="74"/>
+        <Biography></Biography>
+    </General>
+    <General Name="徐盛" ImgPath="">
+        <Capacity Wuli="90" Zhili="86" Tongshuai="88" Minjie="74" Yunqi="59"/>
+        <Biography></Biography>
+    </General>
+    <General Name="黄盖" ImgPath="">
+        <Capacity Wuli="88" Zhili="80" Tongshuai="78" Minjie="45" Yunqi="48"/>
+        <Biography></Biography>
+    </General>
+    <General Name="程普" ImgPath="">
+        <Capacity Wuli="87" Zhili="90" Tongshuai="90" Minjie="80" Yunqi="75"/>
+        <Biography></Biography>
+    </General>
+    <General Name="韩当" ImgPath="">
+        <Capacity Wuli="85" Zhili="52" Tongshuai="80" Minjie="76" Yunqi="63"/>
+        <Biography></Biography>
+    </General>
+    <General Name="蒋钦" ImgPath="">
+        <Capacity Wuli="86" Zhili="35" Tongshuai="74" Minjie="58" Yunqi="76"/>
+        <Biography></Biography>
+    </General>
+    <General Name="丁奉" ImgPath="">
+        <Capacity Wuli="88" Zhili="78" Tongshuai="83" Minjie="91" Yunqi="47"/>
+        <Biography></Biography>
+    </General>
+    <General Name="全琮" ImgPath="">
+        <Capacity Wuli="77" Zhili="70" Tongshuai="75" Minjie="64" Yunqi="80"/>
+        <Biography></Biography>
+    </General>
+    <General Name="朱宇轲" ImgPath="">
+        <Capacity Wuli="85" Zhili="94" Tongshuai="90" Minjie="94" Yunqi="75"/>
+        <Biography></Biography>
+    </General>
+    <General Name="王子豪" ImgPath="">
+        <Capacity Wuli="97" Zhili="86" Tongshuai="90" Minjie="73" Yunqi="65"/>
+        <Biography></Biography>
+    </General>
+    <General Name="吴凯琳" ImgPath="">
+        <Capacity Wuli="32" Zhili="94" Tongshuai="80" Minjie="82" Yunqi="100"/>
+        <Biography></Biography>
+    </General>
+    <General Name="姜慧文" ImgPath="">
+        <Capacity Wuli="90" Zhili="90" Tongshuai="85" Minjie="72" Yunqi="66"/>
+        <Biography></Biography>
+    </General>
+    <General Name="吕晴" ImgPath="">
+        <Capacity Wuli="75" Zhili="86" Tongshuai="64" Minjie="88" Yunqi="62"/>
+        <Biography></Biography>
+    </General>
+    <General Name="郝鑫" ImgPath="">
+        <Capacity Wuli="56" Zhili="95" Tongshuai="80" Minjie="78" Yunqi="80"/>
+        <Biography></Biography>
+    </General>
+</Generals>

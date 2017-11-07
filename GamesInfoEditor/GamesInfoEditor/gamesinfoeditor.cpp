@@ -140,6 +140,12 @@ void GamesInfoEditor::importGeneralsXML(const std::string& file_name)
 		XMLElement* bio_node = cap_node->NextSiblingElement();
 		if (bio_node->GetText())
 			general.biography = bio_node->GetText();
+		XMLElement* cri_node = bio_node->NextSiblingElement();
+		if (cri_node->GetText())
+			general.critical = cri_node->GetText();
+		XMLElement* ret_node = cri_node->NextSiblingElement();
+		if (ret_node->GetText())
+			general.retreate = ret_node->GetText();
 		generals.push_back(general);
 	}
 	ui.listWidget->updateListViewFromGenerals();

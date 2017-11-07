@@ -1,198 +1,198 @@
 <Generals>
     <General Name="曹操" ImgPath="">
-        <Capacity Wuli="82" Zhili="92" Tongshuai="98" Minjie="80" Yunqi="84" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="82" Zhili="92" Tongshuai="98" Minjie="80" Yunqi="84" HpAdd="2" MpAdd="6"/>
         <Biography></Biography>
         <Critical>宁我负人，毋人负我！</Critical>
         <Retreat>难道天命不在寡人吗？</Retreat>
     </General>
     <General Name="夏侯惇" ImgPath="">
-        <Capacity Wuli="95" Zhili="64" Tongshuai="82" Minjie="90" Yunqi="66" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="95" Zhili="64" Tongshuai="82" Minjie="90" Yunqi="66" HpAdd="6" MpAdd="0"/>
         <Biography></Biography>
         <Critical>好好记住，我乃曹营第一将夏侯惇！</Critical>
         <Retreat>可恶，撑不住了。</Retreat>
     </General>
     <General Name="夏侯渊" ImgPath="">
-        <Capacity Wuli="91" Zhili="44" Tongshuai="80" Minjie="78" Yunqi="66" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="91" Zhili="44" Tongshuai="80" Minjie="78" Yunqi="66" HpAdd="5" MpAdd="5"/>
         <Biography></Biography>
         <Critical>神箭开，箭火炽！</Critical>
         <Retreat>可恨！</Retreat>
     </General>
     <General Name="张辽" ImgPath="">
-        <Capacity Wuli="92" Zhili="86" Tongshuai="88" Minjie="78" Yunqi="94" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="92" Zhili="86" Tongshuai="88" Minjie="78" Yunqi="94" HpAdd="6" MpAdd="4"/>
         <Biography></Biography>
         <Critical>你觉悟吧！</Critical>
         <Retreat>形势不利，只能先撤了</Retreat>
     </General>
     <General Name="曹洪" ImgPath="">
-        <Capacity Wuli="84" Zhili="80" Tongshuai="78" Minjie="60" Yunqi="70" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="84" Zhili="80" Tongshuai="78" Minjie="60" Yunqi="70" HpAdd="3" MpAdd="3"/>
         <Biography></Biography>
         <Critical>为了主公的胜利，我会拼尽一切！</Critical>
         <Retreat>哎，这次又要破财了。</Retreat>
     </General>
     <General Name="曹仁" ImgPath="">
-        <Capacity Wuli="88" Zhili="70" Tongshuai="92" Minjie="64" Yunqi="62" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="88" Zhili="70" Tongshuai="92" Minjie="64" Yunqi="62" HpAdd="18" MpAdd="2"/>
         <Biography></Biography>
         <Critical>有我曹子孝在此，你休想再前进一步！</Critical>
         <Retreat>可恶，太嚣张了！</Retreat>
     </General>
     <General Name="于禁" ImgPath="">
-        <Capacity Wuli="78" Zhili="60" Tongshuai="90" Minjie="90" Yunqi="61" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="78" Zhili="60" Tongshuai="90" Minjie="90" Yunqi="61" HpAdd="6" MpAdd="4"/>
         <Biography></Biography>
         <Critical>呜呜呜呜……</Critical>
         <Retreat>不要这样，我撤退还不行吗？</Retreat>
     </General>
     <General Name="徐晃" ImgPath="">
-        <Capacity Wuli="93" Zhili="75" Tongshuai="84" Minjie="65" Yunqi="85" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="93" Zhili="75" Tongshuai="84" Minjie="65" Yunqi="85" HpAdd="8" MpAdd="3"/>
         <Biography></Biography>
         <Critical>今日为公，只能全力一战，得罪！</Critical>
         <Retreat>我徐公明竟然也会失败？</Retreat>
     </General>
     <General Name="乐进" ImgPath="">
-        <Capacity Wuli="85" Zhili="48" Tongshuai="80" Minjie="62" Yunqi="70" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="85" Zhili="48" Tongshuai="80" Minjie="62" Yunqi="70" HpAdd="3" MpAdd="0"/>
         <Biography></Biography>
         <Critical>哼，休得小看了我乐文谦！</Critical>
         <Retreat>啊！</Retreat>
     </General>
     <General Name="李典" ImgPath="">
-        <Capacity Wuli="78" Zhili="82" Tongshuai="75" Minjie="77" Yunqi="85" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="78" Zhili="82" Tongshuai="75" Minjie="77" Yunqi="85" HpAdd="4" MpAdd="8"/>
         <Biography></Biography>
         <Critical>我李曼成作为一个长者，要教给你一点人生的经验！</Critical>
         <Retreat>你搞得这个啊，一颗赛艇！</Retreat>
     </General>
     <General Name="庞德" ImgPath="">
-        <Capacity Wuli="94" Zhili="78" Tongshuai="85" Minjie="62" Yunqi="60" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="94" Zhili="78" Tongshuai="85" Minjie="62" Yunqi="60" HpAdd="10" MpAdd="1"/>
         <Biography></Biography>
         <Critical>喝啊！</Critical>
         <Retreat>主公……</Retreat>
     </General>
     <General Name="典韦" ImgPath="">
-        <Capacity Wuli="99" Zhili="32" Tongshuai="74" Minjie="100" Yunqi="65" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="99" Zhili="32" Tongshuai="74" Minjie="100" Yunqi="65" HpAdd="12" MpAdd="0"/>
         <Biography></Biography>
         <Critical>我要让你尝尝恶来典韦的厉害！</Critical>
         <Retreat>主公，我不行了……</Retreat>
     </General>
     <General Name="许褚" ImgPath="">
-        <Capacity Wuli="96" Zhili="36" Tongshuai="75" Minjie="90" Yunqi="77" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="96" Zhili="36" Tongshuai="75" Minjie="90" Yunqi="77" HpAdd="18" MpAdd="0"/>
         <Biography></Biography>
         <Critical>唔唔唔唔，全力一击！</Critical>
         <Retreat>呃，昨晚喝高了……</Retreat>
     </General>
     <General Name="张郃" ImgPath="">
-        <Capacity Wuli="90" Zhili="84" Tongshuai="88" Minjie="56" Yunqi="74" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="90" Zhili="84" Tongshuai="88" Minjie="56" Yunqi="74" HpAdd="5" MpAdd="4"/>
         <Biography></Biography>
         <Critical>成为我的手下亡魂吧！</Critical>
         <Retreat>膝盖中了一箭……</Retreat>
     </General>
     <General Name="曹彰" ImgPath="">
-        <Capacity Wuli="92" Zhili="52" Tongshuai="87" Minjie="75" Yunqi="76" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="92" Zhili="52" Tongshuai="87" Minjie="75" Yunqi="76" HpAdd="2" MpAdd="0"/>
         <Biography></Biography>
         <Critical>嘿呀！</Critical>
         <Retreat>父亲……</Retreat>
     </General>
     <General Name="曹丕" ImgPath="">
-        <Capacity Wuli="64" Zhili="88" Tongshuai="85" Minjie="90" Yunqi="42" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="64" Zhili="88" Tongshuai="85" Minjie="90" Yunqi="42" HpAdd="1" MpAdd="10"/>
         <Biography></Biography>
         <Critical>唔……</Critical>
         <Retreat>我可是堂堂魏国太子，怎么能死在这种地方？</Retreat>
     </General>
     <General Name="甄宓" ImgPath="">
-        <Capacity Wuli="75" Zhili="64" Tongshuai="56" Minjie="92" Yunqi="68" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="75" Zhili="72" Tongshuai="56" Minjie="92" Yunqi="68" HpAdd="-2" MpAdd="15"/>
         <Biography></Biography>
         <Critical>嘻嘻，眼睛不要移开我嘛~</Critical>
         <Retreat>啊，你不懂得怜香惜玉吗？</Retreat>
     </General>
     <General Name="邓艾" ImgPath="">
-        <Capacity Wuli="88" Zhili="93" Tongshuai="90" Minjie="46" Yunqi="86" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="88" Zhili="93" Tongshuai="90" Minjie="46" Yunqi="86" HpAdd="10" MpAdd="8"/>
         <Biography></Biography>
         <Critical>胜败在此一，一举！</Critical>
         <Retreat>不不不，不行了……</Retreat>
     </General>
     <General Name="钟会" ImgPath="">
-        <Capacity Wuli="54" Zhili="91" Tongshuai="89" Minjie="65" Yunqi="80" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="54" Zhili="91" Tongshuai="89" Minjie="65" Yunqi="80" HpAdd="4" MpAdd="1"/>
         <Biography></Biography>
         <Critical>不要把我和邓艾那个二逼相提并论。</Critical>
         <Retreat>可恶，我居然会输……</Retreat>
     </General>
     <General Name="荀彧" ImgPath="">
-        <Capacity Wuli="46" Zhili="96" Tongshuai="75" Minjie="68" Yunqi="90" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="46" Zhili="96" Tongshuai="75" Minjie="68" Yunqi="90" HpAdd="6" MpAdd="1"/>
         <Biography></Biography>
         <Critical>呀！</Critical>
         <Retreat>胜败乃兵家常事。</Retreat>
     </General>
     <General Name="荀攸" ImgPath="">
-        <Capacity Wuli="48" Zhili="94" Tongshuai="72" Minjie="58" Yunqi="88" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="48" Zhili="94" Tongshuai="72" Minjie="58" Yunqi="88" HpAdd="2" MpAdd="0"/>
         <Biography></Biography>
         <Critical>唔！</Critical>
         <Retreat>可恶，一定是哪里计算错了。</Retreat>
     </General>
     <General Name="郭嘉" ImgPath="">
-        <Capacity Wuli="22" Zhili="98" Tongshuai="64" Minjie="45" Yunqi="90" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="22" Zhili="98" Tongshuai="64" Minjie="45" Yunqi="90" HpAdd="0" MpAdd="6"/>
         <Biography></Biography>
         <Critical>额，真的要肉搏吗？</Critical>
         <Retreat>主公，我先撤了。</Retreat>
     </General>
     <General Name="满宠" ImgPath="">
-        <Capacity Wuli="56" Zhili="90" Tongshuai="86" Minjie="68" Yunqi="74" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="56" Zhili="90" Tongshuai="86" Minjie="68" Yunqi="74" HpAdd="1" MpAdd="1"/>
         <Biography></Biography>
         <Critical>孙十万渣得很，我曾把他虐得找不到北。</Critical>
         <Retreat>撤撤撤！</Retreat>
     </General>
     <General Name="贾诩" ImgPath="">
-        <Capacity Wuli="52" Zhili="97" Tongshuai="77" Minjie="42" Yunqi="90" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="52" Zhili="97" Tongshuai="77" Minjie="42" Yunqi="90" HpAdd="8" MpAdd="0"/>
         <Biography></Biography>
         <Critical>蛤，我居然要上前线？</Critical>
         <Retreat>三十六计，走为上计。</Retreat>
     </General>
     <General Name="司马懿" ImgPath="">
-        <Capacity Wuli="64" Zhili="98" Tongshuai="96" Minjie="42" Yunqi="79" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="64" Zhili="98" Tongshuai="96" Minjie="42" Yunqi="79" HpAdd="1" MpAdd="8"/>
         <Biography></Biography>
         <Critical>去死吧！</Critical>
         <Retreat>我还有头否？</Retreat>
     </General>
     <General Name="程昱" ImgPath="">
-        <Capacity Wuli="52" Zhili="92" Tongshuai="77" Minjie="39" Yunqi="63" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="52" Zhili="92" Tongshuai="77" Minjie="39" Yunqi="63" HpAdd="0" MpAdd="3"/>
         <Biography></Biography>
         <Critical>嘿！</Critical>
         <Retreat>唉，回去复盘吧！</Retreat>
     </General>
     <General Name="刘备" ImgPath="">
-        <Capacity Wuli="78" Zhili="76" Tongshuai="80" Minjie="86" Yunqi="100" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="78" Zhili="76" Tongshuai="80" Minjie="86" Yunqi="100" HpAdd="2" MpAdd="2"/>
         <Biography></Biography>
         <Critical>这就是万民的愤怒！</Critical>
         <Retreat>难道汉室复兴无望了吗？</Retreat>
     </General>
     <General Name="关羽" ImgPath="">
-        <Capacity Wuli="97" Zhili="76" Tongshuai="92" Minjie="80" Yunqi="85" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="97" Zhili="76" Tongshuai="92" Minjie="80" Yunqi="85" HpAdd="7" MpAdd="5"/>
         <Biography></Biography>
         <Critical>记好了，我就是威震华夏的关云长！</Critical>
         <Retreat>哼，我宁死也不会屈服的！</Retreat>
     </General>
     <General Name="张飞" ImgPath="">
-        <Capacity Wuli="98" Zhili="33" Tongshuai="85" Minjie="84" Yunqi="62" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="98" Zhili="33" Tongshuai="85" Minjie="84" Yunqi="62" HpAdd="8" MpAdd="0"/>
         <Biography></Biography>
         <Critical>俺乃燕人张翼德，和我决一死战！</Critical>
         <Retreat>唔，俺要撤了！</Retreat>
     </General>
     <General Name="赵云" ImgPath="">
-        <Capacity Wuli="96" Zhili="88" Tongshuai="82" Minjie="90" Yunqi="53" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="96" Zhili="88" Tongshuai="82" Minjie="90" Yunqi="53" HpAdd="6" MpAdd="0"/>
         <Biography></Biography>
         <Critical>承让！</Critical>
         <Retreat>主公，子龙还能再战啊。</Retreat>
     </General>
     <General Name="马超" ImgPath="">
-        <Capacity Wuli="96" Zhili="46" Tongshuai="88" Minjie="74" Yunqi="65" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="96" Zhili="46" Tongshuai="88" Minjie="74" Yunqi="65" HpAdd="5" MpAdd="0"/>
         <Biography></Biography>
         <Critical>这就是你我实力的差距。</Critical>
         <Retreat>可恶，我竟然输了！</Retreat>
     </General>
     <General Name="黄忠" ImgPath="">
-        <Capacity Wuli="93" Zhili="55" Tongshuai="80" Minjie="54" Yunqi="75" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="93" Zhili="55" Tongshuai="80" Minjie="54" Yunqi="75" HpAdd="2" MpAdd="1"/>
         <Biography></Biography>
         <Critical>我倒是要让你看看我究竟老是不老？</Critical>
         <Retreat>唔，体力不支了……</Retreat>
     </General>
     <General Name="诸葛亮" ImgPath="">
-        <Capacity Wuli="32" Zhili="100" Tongshuai="98" Minjie="46" Yunqi="86" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="32" Zhili="100" Tongshuai="98" Minjie="46" Yunqi="86" HpAdd="2" MpAdd="10"/>
         <Biography></Biography>
         <Critical>善战者不怒，善胜者不惧。</Critical>
         <Retreat>知天易，逆天难啊！</Retreat>
@@ -210,91 +210,91 @@
         <Retreat>额，没力气了。</Retreat>
     </General>
     <General Name="魏延" ImgPath="">
-        <Capacity Wuli="92" Zhili="68" Tongshuai="84" Minjie="85" Yunqi="44" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="92" Zhili="68" Tongshuai="84" Minjie="85" Yunqi="44" HpAdd="8" MpAdd="0"/>
         <Biography></Biography>
         <Critical>在我魏文长看来，你不过乃豚鼠尔。</Critical>
         <Retreat>我倒是要看看谁敢杀我？</Retreat>
     </General>
     <General Name="姜维" ImgPath="">
-        <Capacity Wuli="90" Zhili="92" Tongshuai="91" Minjie="84" Yunqi="62" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="90" Zhili="92" Tongshuai="91" Minjie="84" Yunqi="62" HpAdd="12" MpAdd="2"/>
         <Biography></Biography>
         <Critical>有我姜伯约在此，我倒看看你还能撑到几时。</Critical>
         <Retreat>且先退兵，再做计较。</Retreat>
     </General>
     <General Name="廖化" ImgPath="">
-        <Capacity Wuli="84" Zhili="62" Tongshuai="77" Minjie="75" Yunqi="95" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="84" Zhili="62" Tongshuai="77" Minjie="75" Yunqi="95" HpAdd="18" MpAdd="0"/>
         <Biography></Biography>
         <Critical>喝啊！</Critical>
         <Retreat>哎呀，撤了。</Retreat>
     </General>
     <General Name="马岱" ImgPath="">
-        <Capacity Wuli="85" Zhili="45" Tongshuai="76" Minjie="67" Yunqi="53" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="85" Zhili="45" Tongshuai="76" Minjie="67" Yunqi="53" HpAdd="7" MpAdd="0"/>
         <Biography></Biography>
         <Critical>全力一击！</Critical>
         <Retreat>挫折才是好男儿成长的食粮。</Retreat>
     </General>
     <General Name="关平" ImgPath="">
-        <Capacity Wuli="92" Zhili="48" Tongshuai="77" Minjie="80" Yunqi="69" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="92" Zhili="48" Tongshuai="77" Minjie="80" Yunqi="69" HpAdd="4" MpAdd="0"/>
         <Biography></Biography>
         <Critical>小君侯在此！休得猖狂！</Critical>
         <Retreat>父亲……</Retreat>
     </General>
     <General Name="王平" ImgPath="">
-        <Capacity Wuli="78" Zhili="70" Tongshuai="82" Minjie="60" Yunqi="53" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="78" Zhili="70" Tongshuai="82" Minjie="60" Yunqi="53" HpAdd="8" MpAdd="2"/>
         <Biography></Biography>
         <Critical>吃我一箭！</Critical>
         <Retreat>没办法了。</Retreat>
     </General>
     <General Name="张翼" ImgPath="">
-        <Capacity Wuli="77" Zhili="85" Tongshuai="83" Minjie="82" Yunqi="48" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="77" Zhili="85" Tongshuai="83" Minjie="82" Yunqi="48" HpAdd="12" MpAdd="0"/>
         <Biography></Biography>
         <Critical>嘿呀！</Critical>
         <Retreat>呃啊！</Retreat>
     </General>
     <General Name="张嶷" ImgPath="">
-        <Capacity Wuli="76" Zhili="80" Tongshuai="84" Minjie="69" Yunqi="83" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="76" Zhili="80" Tongshuai="84" Minjie="69" Yunqi="83" HpAdd="13" MpAdd="1"/>
         <Biography></Biography>
         <Critical>和我一战吧！</Critical>
         <Retreat>身患疾病，体力不支了。</Retreat>
     </General>
     <General Name="孟获" ImgPath="">
-        <Capacity Wuli="84" Zhili="30" Tongshuai="75" Minjie="55" Yunqi="68" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="84" Zhili="30" Tongshuai="75" Minjie="55" Yunqi="68" HpAdd="9" MpAdd="0"/>
         <Biography></Biography>
         <Critical>小的们，出击！</Critical>
         <Retreat>不要杀我呀！我跑！</Retreat>
     </General>
     <General Name="祝融" ImgPath="">
-        <Capacity Wuli="80" Zhili="25" Tongshuai="67" Minjie="68" Yunqi="74" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="80" Zhili="59" Tongshuai="67" Minjie="68" Yunqi="74" HpAdd="0" MpAdd="15"/>
         <Biography></Biography>
         <Critical>哈哈哈，你们汉人真是有意思！</Critical>
         <Retreat>哎，你好粗鲁啊！</Retreat>
     </General>
     <General Name="孟优" ImgPath="">
-        <Capacity Wuli="78" Zhili="26" Tongshuai="71" Minjie="58" Yunqi="82" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="78" Zhili="26" Tongshuai="71" Minjie="58" Yunqi="82" HpAdd="9" MpAdd="0"/>
         <Biography></Biography>
         <Critical>小的们，上！</Critical>
         <Retreat>哥哥……</Retreat>
     </General>
     <General Name="法正" ImgPath="">
-        <Capacity Wuli="48" Zhili="96" Tongshuai="75" Minjie="45" Yunqi="67" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="48" Zhili="96" Tongshuai="75" Minjie="45" Yunqi="67" HpAdd="0" MpAdd="3"/>
         <Biography></Biography>
         <Critical>唔……</Critical>
         <Retreat>事已至此，只能撤退了。</Retreat>
     </General>
     <General Name="庞统" ImgPath="">
-        <Capacity Wuli="58" Zhili="98" Tongshuai="85" Minjie="62" Yunqi="30" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="58" Zhili="98" Tongshuai="85" Minjie="62" Yunqi="30" HpAdd="0" MpAdd="2"/>
         <Biography></Biography>
         <Critical>看我的连环计！</Critical>
         <Retreat>咦？这里应该不是落凤坡啊！</Retreat>
     </General>
     <General Name="孙乾" ImgPath="">
-        <Capacity Wuli="66" Zhili="84" Tongshuai="68" Minjie="65" Yunqi="76" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="66" Zhili="84" Tongshuai="68" Minjie="65" Yunqi="76" HpAdd="5" MpAdd="0"/>
         <Biography></Biography>
         <Critical>拼死也要取得胜利！</Critical>
         <Retreat>主公……</Retreat>
     </General>
     <General Name="糜竺" ImgPath="">
-        <Capacity Wuli="36" Zhili="86" Tongshuai="74" Minjie="24" Yunqi="88" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="36" Zhili="86" Tongshuai="74" Minjie="24" Yunqi="88" HpAdd="0" MpAdd="1"/>
         <Biography></Biography>
         <Critical>放手一搏吧。</Critical>
         <Retreat>撤退了。</Retreat>
@@ -306,217 +306,217 @@
         <Retreat>哎，我果然不适合在前线。</Retreat>
     </General>
     <General Name="蒋琬" ImgPath="">
-        <Capacity Wuli="41" Zhili="92" Tongshuai="82" Minjie="59" Yunqi="78" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="41" Zhili="92" Tongshuai="82" Minjie="59" Yunqi="78" HpAdd="4" MpAdd="4"/>
         <Biography></Biography>
         <Critical>我是文官不假，但我依然能伤到你。</Critical>
         <Retreat>丞相，我先撤了！</Retreat>
     </General>
     <General Name="费祎" ImgPath="">
-        <Capacity Wuli="31" Zhili="91" Tongshuai="81" Minjie="32" Yunqi="58" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="31" Zhili="91" Tongshuai="81" Minjie="32" Yunqi="58" HpAdd="2" MpAdd="1"/>
         <Biography></Biography>
         <Critical>哼！</Critical>
         <Retreat>啊，被人暗算了！</Retreat>
     </General>
     <General Name="马良" ImgPath="">
-        <Capacity Wuli="36" Zhili="90" Tongshuai="60" Minjie="47" Yunqi="62" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="36" Zhili="90" Tongshuai="60" Minjie="47" Yunqi="62" HpAdd="0" MpAdd="2"/>
         <Biography></Biography>
         <Critical>嘿呀！</Critical>
         <Retreat>主公，我不行了！</Retreat>
     </General>
     <General Name="孙坚" ImgPath="">
-        <Capacity Wuli="91" Zhili="71" Tongshuai="90" Minjie="85" Yunqi="64" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="91" Zhili="71" Tongshuai="90" Minjie="85" Yunqi="64" HpAdd="0" MpAdd="5"/>
         <Biography></Biography>
         <Critical>看我孙破虏的全力一击！</Critical>
         <Retreat>额，天命不在我吗？</Retreat>
     </General>
     <General Name="孙策" ImgPath="">
-        <Capacity Wuli="92" Zhili="68" Tongshuai="90" Minjie="92" Yunqi="31" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="92" Zhili="68" Tongshuai="90" Minjie="92" Yunqi="31" HpAdd="2" MpAdd="1"/>
         <Biography></Biography>
         <Critical>我就是江东小霸王，你给我记住了！</Critical>
         <Retreat>可恶，还好没破相。</Retreat>
     </General>
     <General Name="孙权" ImgPath="">
-        <Capacity Wuli="65" Zhili="87" Tongshuai="86" Minjie="65" Yunqi="76" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="65" Zhili="87" Tongshuai="86" Minjie="65" Yunqi="76" HpAdd="5" MpAdd="1"/>
         <Biography></Biography>
         <Critical>我的十万大军已经兵临城下！</Critical>
         <Retreat>咦，我的十万大军呢？</Retreat>
     </General>
     <General Name="周瑜" ImgPath="">
-        <Capacity Wuli="72" Zhili="96" Tongshuai="95" Minjie="61" Yunqi="48" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="72" Zhili="96" Tongshuai="95" Minjie="61" Yunqi="48" HpAdd="0" MpAdd="2"/>
         <Biography></Biography>
         <Critical>长剑斩下，将这一切化为乌有吧！</Critical>
         <Retreat>既生瑜，何生亮！</Retreat>
     </General>
     <General Name="鲁肃" ImgPath="">
-        <Capacity Wuli="77" Zhili="94" Tongshuai="92" Minjie="54" Yunqi="78" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="77" Zhili="94" Tongshuai="92" Minjie="54" Yunqi="78" HpAdd="2" MpAdd="0"/>
         <Biography></Biography>
         <Critical>你一定要与我为敌吗？</Critical>
         <Retreat>只能再图计较了。</Retreat>
     </General>
     <General Name="吕蒙" ImgPath="">
-        <Capacity Wuli="85" Zhili="91" Tongshuai="88" Minjie="80" Yunqi="69" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="85" Zhili="91" Tongshuai="88" Minjie="80" Yunqi="69" HpAdd="3" MpAdd="1"/>
         <Biography></Biography>
         <Critical>你以为我是文官吗？告诉你，我的武力未必比你低。</Critical>
         <Retreat>唔，旧病复发了。</Retreat>
     </General>
     <General Name="陆逊" ImgPath="">
-        <Capacity Wuli="64" Zhili="95" Tongshuai="94" Minjie="55" Yunqi="85" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="64" Zhili="95" Tongshuai="94" Minjie="55" Yunqi="85" HpAdd="6" MpAdd="2"/>
         <Biography></Biography>
         <Critical>自古英雄出少年。</Critical>
         <Retreat>是有两下子，希望下次还能与你对战。</Retreat>
     </General>
     <General Name="张昭" ImgPath="">
-        <Capacity Wuli="30" Zhili="88" Tongshuai="65" Minjie="26" Yunqi="48" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="30" Zhili="88" Tongshuai="65" Minjie="26" Yunqi="48" HpAdd="4" MpAdd="0"/>
         <Biography></Biography>
         <Critical>额……</Critical>
         <Retreat>我早就说了， 投降就好了。</Retreat>
     </General>
     <General Name="张纮" ImgPath="">
-        <Capacity Wuli="25" Zhili="90" Tongshuai="61" Minjie="48" Yunqi="63" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="25" Zhili="90" Tongshuai="61" Minjie="48" Yunqi="63" HpAdd="0" MpAdd="3"/>
         <Biography></Biography>
         <Critical>我暴击一下试试……</Critical>
         <Retreat>这回真是小巫见大巫了。</Retreat>
     </General>
     <General Name="顾雍" ImgPath="">
-        <Capacity Wuli="52" Zhili="87" Tongshuai="46" Minjie="71" Yunqi="57" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="52" Zhili="87" Tongshuai="46" Minjie="71" Yunqi="57" HpAdd="0" MpAdd="1"/>
         <Biography></Biography>
         <Critical>啊？让我去暴击？</Critical>
         <Retreat>哎呦……</Retreat>
     </General>
     <General Name="步骘" ImgPath="">
-        <Capacity Wuli="56" Zhili="89" Tongshuai="77" Minjie="64" Yunqi="73" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="56" Zhili="89" Tongshuai="77" Minjie="64" Yunqi="73" HpAdd="1" MpAdd="1"/>
         <Biography></Biography>
         <Critical>呀呀呀呀呀！</Critical>
         <Retreat>不行了，不行了。</Retreat>
     </General>
     <General Name="诸葛瑾" ImgPath="">
-        <Capacity Wuli="45" Zhili="86" Tongshuai="64" Minjie="33" Yunqi="90" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="45" Zhili="86" Tongshuai="64" Minjie="33" Yunqi="90" HpAdd="4" MpAdd="0"/>
         <Biography></Biography>
         <Critical>明明可以靠人品非要靠能力。</Critical>
         <Retreat>人品耗尽了……</Retreat>
     </General>
     <General Name="太史慈" ImgPath="">
-        <Capacity Wuli="94" Zhili="65" Tongshuai="87" Minjie="78" Yunqi="59" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="94" Zhili="65" Tongshuai="87" Minjie="78" Yunqi="59" HpAdd="1" MpAdd="3"/>
         <Biography></Biography>
         <Critical>大丈夫当提三尺之剑，上阵杀敌！</Critical>
         <Retreat>可恨，壮志难酬！</Retreat>
     </General>
     <General Name="甘宁" ImgPath="">
-        <Capacity Wuli="95" Zhili="48" Tongshuai="88" Minjie="92" Yunqi="76" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="95" Zhili="48" Tongshuai="88" Minjie="92" Yunqi="76" HpAdd="18" MpAdd="3"/>
         <Biography></Biography>
         <Critical>军中为何无鼓乐？</Critical>
         <Retreat>额头中了一箭……</Retreat>
     </General>
     <General Name="周泰" ImgPath="">
-        <Capacity Wuli="93" Zhili="35" Tongshuai="76" Minjie="85" Yunqi="68" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="93" Zhili="35" Tongshuai="76" Minjie="85" Yunqi="68" HpAdd="16" MpAdd="0"/>
         <Biography></Biography>
         <Critical>呀呀呀呀！</Critical>
         <Retreat>主公，我对不住你！</Retreat>
     </General>
     <General Name="潘璋" ImgPath="">
-        <Capacity Wuli="82" Zhili="65" Tongshuai="74" Minjie="48" Yunqi="69" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="82" Zhili="65" Tongshuai="74" Minjie="48" Yunqi="69" HpAdd="15" MpAdd="0"/>
         <Biography></Biography>
         <Critical>咿呀！</Critical>
         <Retreat>让开，我还能一战！</Retreat>
     </General>
     <General Name="陈武" ImgPath="">
-        <Capacity Wuli="78" Zhili="59" Tongshuai="75" Minjie="60" Yunqi="69" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="78" Zhili="59" Tongshuai="75" Minjie="60" Yunqi="69" HpAdd="3" MpAdd="5"/>
         <Biography></Biography>
         <Critical>嘿哈！</Critical>
         <Retreat>啧啧，实在是力不从心了。</Retreat>
     </General>
     <General Name="凌统" ImgPath="">
-        <Capacity Wuli="91" Zhili="45" Tongshuai="82" Minjie="66" Yunqi="80" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="91" Zhili="45" Tongshuai="82" Minjie="66" Yunqi="80" HpAdd="6" MpAdd="2"/>
         <Biography></Biography>
         <Critical>我要让你见识我长枪的可怕。</Critical>
         <Retreat>父仇未报，怎能在此先死？</Retreat>
     </General>
     <General Name="朱然" ImgPath="">
-        <Capacity Wuli="86" Zhili="51" Tongshuai="83" Minjie="58" Yunqi="62" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="86" Zhili="51" Tongshuai="83" Minjie="58" Yunqi="62" HpAdd="3" MpAdd="0"/>
         <Biography></Biography>
         <Critical>朱宇轲是很强，但它的武力不如我。</Critical>
         <Retreat>可恶，没力气了。</Retreat>
     </General>
     <General Name="朱桓" ImgPath="">
-        <Capacity Wuli="84" Zhili="85" Tongshuai="85" Minjie="65" Yunqi="74" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="84" Zhili="85" Tongshuai="85" Minjie="65" Yunqi="74" HpAdd="10" MpAdd="2"/>
         <Biography></Biography>
         <Critical>去死吧！</Critical>
         <Retreat>尽力了。</Retreat>
     </General>
     <General Name="徐盛" ImgPath="">
-        <Capacity Wuli="90" Zhili="86" Tongshuai="88" Minjie="74" Yunqi="59" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="90" Zhili="86" Tongshuai="88" Minjie="74" Yunqi="59" HpAdd="5" MpAdd="7"/>
         <Biography></Biography>
         <Critical>瞄准！射！</Critical>
         <Retreat>留得青山在，不怕没柴烧。</Retreat>
     </General>
     <General Name="黄盖" ImgPath="">
-        <Capacity Wuli="88" Zhili="80" Tongshuai="78" Minjie="45" Yunqi="48" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="88" Zhili="80" Tongshuai="78" Minjie="45" Yunqi="48" HpAdd="0" MpAdd="3"/>
         <Biography></Biography>
         <Critical>看我的全力一击！</Critical>
         <Retreat>哎， 再年轻二十岁就好了。</Retreat>
     </General>
     <General Name="程普" ImgPath="">
-        <Capacity Wuli="87" Zhili="90" Tongshuai="90" Minjie="80" Yunqi="75" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="87" Zhili="90" Tongshuai="90" Minjie="80" Yunqi="75" HpAdd="8" MpAdd="4"/>
         <Biography></Biography>
         <Critical>唔唔唔唔……</Critical>
         <Retreat>想打倒我，没那么容易。</Retreat>
     </General>
     <General Name="韩当" ImgPath="">
-        <Capacity Wuli="85" Zhili="52" Tongshuai="80" Minjie="76" Yunqi="63" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="85" Zhili="52" Tongshuai="80" Minjie="76" Yunqi="63" HpAdd="5" MpAdd="0"/>
         <Biography></Biography>
         <Critical>将士们冲啊！</Critical>
         <Retreat>力不从心，只能撤退了。</Retreat>
     </General>
     <General Name="蒋钦" ImgPath="">
-        <Capacity Wuli="86" Zhili="35" Tongshuai="74" Minjie="58" Yunqi="76" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="86" Zhili="35" Tongshuai="74" Minjie="58" Yunqi="76" HpAdd="12" MpAdd="0"/>
         <Biography></Biography>
         <Critical>我上过的船比你走过的路还多！</Critical>
         <Retreat>哎呀，脚底打滑了……</Retreat>
     </General>
     <General Name="丁奉" ImgPath="">
-        <Capacity Wuli="88" Zhili="78" Tongshuai="83" Minjie="91" Yunqi="47" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="88" Zhili="78" Tongshuai="83" Minjie="91" Yunqi="47" HpAdd="15" MpAdd="3"/>
         <Biography></Biography>
         <Critical>出击！</Critical>
         <Retreat>保留实力，撤！</Retreat>
     </General>
     <General Name="全琮" ImgPath="">
-        <Capacity Wuli="77" Zhili="70" Tongshuai="75" Minjie="64" Yunqi="80" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="77" Zhili="70" Tongshuai="75" Minjie="64" Yunqi="80" HpAdd="3" MpAdd="0"/>
         <Biography></Biography>
         <Critical>呀呀呀呀！</Critical>
         <Retreat>唉！</Retreat>
     </General>
     <General Name="朱宇轲" ImgPath="">
-        <Capacity Wuli="85" Zhili="94" Tongshuai="90" Minjie="94" Yunqi="75" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="85" Zhili="94" Tongshuai="90" Minjie="94" Yunqi="75" HpAdd="10" MpAdd="5"/>
         <Biography></Biography>
         <Critical>将你的生命续给他吧！</Critical>
         <Retreat>另请高明吧，我实在也不是谦虚。</Retreat>
     </General>
     <General Name="王子豪" ImgPath="">
-        <Capacity Wuli="97" Zhili="86" Tongshuai="90" Minjie="73" Yunqi="65" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="97" Zhili="86" Tongshuai="90" Minjie="73" Yunqi="65" HpAdd="7" MpAdd="2"/>
         <Biography></Biography>
         <Critical>全力一击！</Critical>
         <Retreat>黑人无数的我，今天也被别人黑了。</Retreat>
     </General>
     <General Name="吴凯琳" ImgPath="">
-        <Capacity Wuli="32" Zhili="94" Tongshuai="80" Minjie="82" Yunqi="100" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="32" Zhili="94" Tongshuai="80" Minjie="82" Yunqi="100" HpAdd="6" MpAdd="3"/>
         <Biography></Biography>
         <Critical>66666666666</Critical>
         <Retreat>可怕，吓哭了。</Retreat>
     </General>
     <General Name="姜慧文" ImgPath="">
-        <Capacity Wuli="90" Zhili="90" Tongshuai="85" Minjie="72" Yunqi="66" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="90" Zhili="90" Tongshuai="85" Minjie="72" Yunqi="66" HpAdd="2" MpAdd="4"/>
         <Biography></Biography>
         <Critical>我要告诉你，越是好看的女人越会骗人。</Critical>
         <Retreat>吓得我瓜子都掉了。</Retreat>
     </General>
     <General Name="吕晴" ImgPath="">
-        <Capacity Wuli="75" Zhili="86" Tongshuai="64" Minjie="88" Yunqi="62" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="75" Zhili="86" Tongshuai="64" Minjie="88" Yunqi="62" HpAdd="5" MpAdd="2"/>
         <Biography></Biography>
-        <Critical>去死吧！</Critical>
-        <Retreat>没办法了，撤退吧。</Retreat>
+        <Critical>可不要小瞧了本美女！</Critical>
+        <Retreat>唔，你太坏了！</Retreat>
     </General>
     <General Name="郝鑫" ImgPath="">
-        <Capacity Wuli="56" Zhili="95" Tongshuai="80" Minjie="78" Yunqi="80" HpAdd="0" MpAdd="0"/>
+        <Capacity Wuli="56" Zhili="95" Tongshuai="80" Minjie="78" Yunqi="80" HpAdd="0" MpAdd="1"/>
         <Biography></Biography>
         <Critical>一个人的命运，既要考虑个人的奋斗，也要考虑历史的进程。</Critical>
         <Retreat>我跑的比香港记者还要快！</Retreat>

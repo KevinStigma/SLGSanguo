@@ -137,6 +137,8 @@ void GamesInfoEditor::importGeneralsXML(const std::string& file_name)
 		general.tongshuai = atoi(cap_node->Attribute("Tongshuai"));
 		general.minjie = atoi(cap_node->Attribute("Minjie"));
 		general.yunqi = atoi(cap_node->Attribute("Yunqi"));
+		general.hpadd = atoi(cap_node->Attribute("HpAdd"));
+		general.mpadd = atoi(cap_node->Attribute("MpAdd"));
 		XMLElement* bio_node = cap_node->NextSiblingElement();
 		if (bio_node->GetText())
 			general.biography = bio_node->GetText();
